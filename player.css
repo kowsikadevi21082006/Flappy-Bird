@@ -1,0 +1,101 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://img.freepik.com/free-vector/speed-light-spotlights-digital-background_23-2148821702.jpg");
+    position: fixed;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    overflow: hidden;
+}
+/* header file */
+header{
+    color: rgb(10, 10, 10);
+    padding: 07px;
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* arrange the form */
+.container{
+    width: 300px;
+    height: 410px;
+    position: fixed;
+    left: 370px;
+    margin: 20px auto;
+    background-color: rgb(201, 175, 58);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(10, 10, 10);
+}
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input,select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+/* submit button */
+#mal{
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+}
+#fema{
+    position: relative;
+    bottom: 80px;
+    left: 190px;
+}
+#male{
+    position: relative;
+    top: 33px;
+    right: 90px;
+}
+#female{
+    position: relative;
+    right: 80px;
+    top: 33px;
+}
+#button{
+    font-size: 20px;
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+    background-color: rgb(219, 42, 72);
+    color: white;
+    border: none;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 17px;
+    text-decoration: none;
+}
+#button:hover{
+    background-color: rgb(223, 223, 76);
+    color: black;
+}
+@media only screen and (max-width: 480px) {
+    .container{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #button{
+        font-size: 25px;
+        padding: 12px 20px;
+    }
+}

@@ -1,0 +1,75 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://img.freepik.com/premium-vector/blue-shadow-technology-background-design-020708_660340-14.jpg");
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+h1{
+    font-size: 60px;
+}
+.container2{
+    position: absolute;
+    bottom: 28%;
+    left: 22%;
+}
+#easyride{
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 30px;
+    padding: 20px 40px;
+    position: relative;
+    right: 200px;
+    bottom: 150px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease ;
+}
+#easyride:hover{
+    background-color: rgb(230, 30, 63);
+}
+#medium{
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 30px;
+    padding: 20px 40px;
+    position: relative;
+    left: 100px;
+    top: 170px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#medium:hover{
+    background-color: rgb(231, 58, 87);
+}
+#master{
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 30px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#master:hover{
+    background-color: rgb(223, 36, 67);
+}

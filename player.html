@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>player details page</title>
+    <link rel="stylesheet" href="player.css">
+    <!-- <script src="player.js"></script> -->
+</head>
+<body>
+    <!-- form -->
+    <div class="container">
+        <form action="#" method="post" id="players">
+            <!-- Name of the form -->
+            <header>
+                Player Details
+            </header>
+            <!-- Details -->
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Your Name" required>
+            
+            <label for="name">Player ID:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your ID" required>
+
+            <label for="DOB">DOB:</label>
+            <input type="date" id="DOB" name="DOB" required>
+            
+            <label>Gender:
+                 <label id="mal">
+                    <input type="radio" id="male" name="gender" value="male"> Male
+                 </label>
+
+                 <label id="fema">
+                    <input type="radio" id="female" name="gender" value="female"> Female 
+                 </label>
+            </label>
+
+                 <a id="button" href="instruction.html">submit</a>
+        </form>
+
+    </div>
+    <script src="player.js"></script>
+    
+</body>
+</html>

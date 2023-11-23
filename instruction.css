@@ -1,0 +1,49 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-image: url("https://img.freepik.com/premium-vector/blue-shadow-technology-background-design-020708_660340-14.jpg");
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+h1{
+    font-size: 50px;
+    color: white;
+}
+.para{
+    font-size: 32px;
+    color: white;
+}
+p{
+    font-size: 32px;
+    color: white;
+
+}
+.container2{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+#select-level{
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(216, 47, 75);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#select-level:hover{
+    background-color: rgb(233, 233, 76);
+    color: black;
+}
