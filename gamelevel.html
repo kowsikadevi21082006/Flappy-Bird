@@ -7,26 +7,38 @@
     <link rel="stylesheet" href="gamelevel.css">
 </head>
 <body>
+    <!-- image -->
+    <img id="pic" src="https://static.vecteezy.com/system/resources/previews/020/549/589/non_2x/human-hand-push-icons-with-different-emotions-person-choose-mood-or-satisfaction-level-happy-or-sad-illustration-vector.jpg" alt="">
     <!-- Choose level -->
     <h1>Choose the level for game</h1>
     <div class="container2">
         <!-- redirect to the another page in the easy ride page -->
-        <a href="easyride.html">
+        <a href="comman.html">
             <button id="easyride">Easy Ride</button>
         </a>
     </div>
     <div class="container3">
         <!-- redirect to the another page in the medium page -->
-        <a href="medium.html">
+        <a href="comman2.html">
             <button id="medium">Medium</button>
         </a>
     </div>
     <div class="container4">
         <!-- redirect to the another page in the master page -->
-        <a href="master.html">
+        <a href="comman3.html">
             <button id="master">Master</button>
         </a>
     </div>
+    <button id="audioToggle">Sound</button>
+
+      <audio id="gameAudio" loop>
+        <source src="./Audio/violin-connection-ringtone.mp3" type="audio/mp3">
+      </audio>
+      <audio id="gameAudio" loop volume>
+        <source src="./Audio/violin-connection-ringtone.mp3" type="audio/mp3">
+      </audio>
+
+      <script src="gamelevel.js"></script>
     
 </body>
 </html>

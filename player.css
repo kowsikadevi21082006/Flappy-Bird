@@ -15,6 +15,26 @@ body{
     z-index: -1;
     overflow: hidden;
 }
+/* Audio */
+#audioToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#audioToggle:hover {
+    background-color: rgb(212, 40, 69);
+    color: #fff;
+}
 /* header file */
 header{
     color: rgb(10, 10, 10);
@@ -25,15 +45,18 @@ header{
 }
 /* arrange the form */
 .container{
-    width: 300px;
-    height: 410px;
+    width: 320px;
+    height: 420px;
     position: fixed;
-    left: 370px;
     margin: 20px auto;
     background-color: rgb(201, 175, 58);
     padding: 20px;
+    position: relative;
+    left: 10px;
+    top: 80px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgb(10, 10, 10);
+    overflow: hidden;
 }
 label{
     display: block;

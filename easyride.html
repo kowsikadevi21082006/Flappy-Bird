@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="easyride.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="border-left"></div>
+    <div class="border-right"></div>
+    <div class="game-container">
+    <div class="border-top"></div>
+   
+
+        <div class="sky">
+            <div class="bird"></div>
+        </div>
+
+        <div class="ground">
+        </div>
+    </div>
+    <a href="gamelevel.html">
+        <button id="start">Select any level</button>
+    </a>
+
+    <button id="audioToggle">Sound</button>
+
+      <audio id="gameAudio" loop>
+        <source src="./Audio/violin-connection-ringtone.mp3" type="audio/mp3">
+      </audio>
+      <audio id="gameAudio" loop volume>
+        <source src="./Audio/violin-connection-ringtone.mp3" type="audio/mp3">
+      </audio>
+
+    <script src="easyride.js"></script>
+</body>
+</html>

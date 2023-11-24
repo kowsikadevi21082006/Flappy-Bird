@@ -13,16 +13,55 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -1;
+    overflow: hidden;
+}
+/* Audio */
+#audioToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#audioToggle:hover {
+    background-color: rgb(212, 40, 69);
+    color: #fff;
 }
 h1{
     font-size: 60px;
+    color: white;
+    position: relative;
+    bottom: 430px;
+
 }
-.container2{
-    position: absolute;
-    bottom: 28%;
-    left: 22%;
+#pic{
+    width: 450px;
+    height: 420px;
+    position: relative;
+    left: 700px;
+    top: 160px;
+    border-radius: 15px;
+
 }
-#easyride{
+.container2,
+.container3,
+.container4{
+    position: relative;
+    bottom: 250px;
+    left: 310px;
+    
+}
+#easyride,
+#medium,
+#master{
     text-align: center;
     margin-bottom: 70px;
     font-size: 30px;
@@ -35,41 +74,10 @@ h1{
     background-color: white;
     color: black;
     cursor: pointer;
-    transition: background-color 0.3s ease ;
-}
-#easyride:hover{
-    background-color: rgb(230, 30, 63);
-}
-#medium{
-    text-align: center;
-    margin-bottom: 70px;
-    font-size: 30px;
-    padding: 20px 40px;
-    position: relative;
-    left: 100px;
-    top: 170px;
-    border: none;
-    border-radius: 25px;
-    background-color: white;
-    color: black;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
-#medium:hover{
-    background-color: rgb(231, 58, 87);
-}
-#master{
-    text-align: center;
-    margin-bottom: 70px;
-    font-size: 30px;
-    padding: 20px 40px;
-    border: none;
-    border-radius: 25px;
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+#easyride:hover,
+#medium:hover,
 #master:hover{
-    background-color: rgb(223, 36, 67);
+    background-color: rgb(230, 30, 63);
 }
