@@ -78,3 +78,31 @@ body{
     background-color: rgb(243, 243, 91);
     color: black;
 }
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 760px) {
+    body {
+        background-size: cover; /* Adjust background size for smaller screens */
+    }
+    #image{
+        width: 420px;
+        position: absolute;
+        left: 70px;
+    }
+    #logo{
+        width: 120px;
+        height: 100px;
+        position: absolute;
+        left: 500px;
+    }
+
+    #audioToggle {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    #startbutton {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Adjust font size for smaller screens */
+        position: relative;
+        top: 350px;
+    }
+}

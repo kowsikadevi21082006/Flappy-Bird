@@ -59,8 +59,36 @@ h1{
     left: 310px;
     
 }
-#easyride,
-#medium,
+#easyride{
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 30px;
+    padding: 20px 40px;
+    position: relative;
+    right: 200px;
+    bottom: 150px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#medium{
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 30px;
+    padding: 20px 40px;
+    position: relative;
+    right: 200px;
+    bottom: 150px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 #master{
     text-align: center;
     margin-bottom: 70px;
@@ -80,4 +108,77 @@ h1{
 #medium:hover,
 #master:hover{
     background-color: rgb(230, 30, 63);
+}
+/* Media Query for Smaller Screens */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 33px;
+        position: absolute;
+        top: 20px;
+    }
+
+    #pic {
+        width: 50%;
+        height: 340px;
+        position: absolute;
+        left: 320px;
+        top: 150px;
+        border-radius: 15px;
+    }
+
+    .container2,
+    .container3,
+    .container4 {
+        bottom: 150px;
+        left: 0;
+    }
+
+    #easyride {
+         text-align: center;
+         margin-bottom: 50px;
+         font-size: 25px;
+         padding: 15px 30px;
+         position: relative;
+         left: 70px;
+         top: 300px;
+         bottom: 150px;
+         border: none;
+         border-radius: 25px;
+         background-color: white;
+         color: black;
+         cursor: pointer;
+         transition: background-color 0.3s ease;
+    }
+    #medium {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 25px;
+        padding: 15px 30px;
+        position: relative;
+        left: 70px;
+        top: 330px;
+        bottom: 200px;
+        border: none;
+        border-radius: 25px;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    #master{
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 25px;
+        padding: 15px 30px;
+        position: relative;
+        left: 70px;
+        top: 360px;
+        bottom: 200px;
+        border: none;
+        border-radius: 25px;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
 }

@@ -67,3 +67,19 @@ p{
     background-color: rgb(233, 233, 76);
     color: black;
 }
+/* Media Query for Small Screens */
+@media only screen and (max-width: 760px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .para,
+    p {
+        font-size: 22px;
+    }
+
+    #select-level {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+}

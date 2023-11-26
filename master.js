@@ -48,16 +48,16 @@ window.onload = function() {
 
     //load images
     birdImg = new Image();
-    birdImg.src = "./graphics/train.png";
+    birdImg.src = "./images/flappybird.png";
     birdImg.onload = function() {
         context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
     }
 
     topPipeImg = new Image();
-    topPipeImg.src = "./graphics/pipe_marshmallow_fix.png";
+    topPipeImg.src = "./images/pipe.png";
 
     bottomPipeImg = new Image();
-    bottomPipeImg.src = "./graphics/pipe_marshmallow.png";
+    bottomPipeImg.src = "./images/pipe.png";
 
     requestAnimationFrame(update);
     setInterval(placePipes, 1500); //every 1.5 seconds
@@ -166,3 +166,63 @@ function detectCollision(a, b) {
            a.y < b.y + b.height &&  //a's top left corner doesn't reach b's bottom left corner
            a.y + a.height > b.y;    //a's bottom left corner passes b's top left corner
 }
+
+const gameAudio = document.getElementById("gameAudio");
+const audioToggleBtn = document.getElementById("audioToggle");
+
+// Function to play the audio
+const playAudio = () => {
+  gameAudio.play();
+};
+
+// Function to pause the audio
+const pauseAudio = () => {
+  gameAudio.pause();
+};
+
+// Function to toggle play/pause
+const toggleAudio = () => {
+  if (gameAudio.paused) {
+    playAudio();
+  } else {
+    pauseAudio();
+  }
+};
+
+// Event listener for when the audio ends, restart it
+gameAudio.addEventListener("ended", () => {
+  playAudio();
+});
+
+// Event listener for the button to toggle audio
+audioToggleBtn.addEventListener("click", () => {
+  toggleAudio();
+  // Save the audio state to sessionStorage
+  sessionStorage.setItem("audioState", gameAudio.paused ? "off" : "on");
+});
+
+// Event listener for when the page is unloaded (e.g., when navigating to another page)
+window.addEventListener("beforeunload", () => {
+  // Save the audio playback position to sessionStorage
+  sessionStorage.setItem("audioPlaybackPosition", gameAudio.currentTime);
+});
+
+// Start playing the audio when the page loads
+if (sessionStorage.getItem("audioState") === "on") {
+  playAudio();
+}
+
+// Restore the audio playback position from sessionStorage
+const savedPosition = sessionStorage.getItem("audioPlaybackPosition");
+if (savedPosition) {
+  gameAudio.currentTime = parseFloat(savedPosition);
+}
+
+// Stop the audio when the game stops
+stopButton.addEventListener("click", () => {
+  controls.classList.remove("hide");
+  stopButton.classList.add("hide");
+  startButton.classList.remove("hide");
+  clearInterval(interval);
+  pauseAudio();
+});

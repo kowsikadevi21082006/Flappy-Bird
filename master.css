@@ -1,17 +1,18 @@
-body{
-    background-size: cover;
+body {
+    font-family:'Courier New', Courier, monospace;
     text-align: center;
-    width: 100%;
-    height: 80%;
-    background-image: url("https://img.freepik.com/free-photo/sunshine-clouds-sky-during-morning-background-blue-white-pastel-heaven-soft-focus-lens-flare-sunlight-abstract-blurred-cyan-gradient-peaceful-nature-open-view-out-windows-beautiful-summer-spring_1253-1092.jpg");
-}
-#board{
-    background-image: url("./graphics/background.png");
+    background-image: url("./flappydark.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
+}
+
+#board {
+    /* background-color: skyblue; */
+    background-image: url("https://img.pikbest.com/back_our/20201224/bg/64ba6f3b544ff.png!w700wp");
+    background-size: cover;
 }
 
 /* Audio */

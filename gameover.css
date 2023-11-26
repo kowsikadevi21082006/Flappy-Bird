@@ -1,0 +1,12 @@
+body{
+    display: flex;
+}
+.container{
+    position: relative;
+    left: 200px;
+    top: 100px;
+}
+#play{
+    text-align: center;
+    font-size: 25px;
+}
