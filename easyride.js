@@ -167,6 +167,7 @@ function detectCollision(a, b) {
            a.y + a.height > b.y;    //a's bottom left corner passes b's top left corner
 }
 
+
 const gameAudio = document.getElementById("gameAudio");
 const audioToggleBtn = document.getElementById("audioToggle");
 
@@ -201,7 +202,7 @@ audioToggleBtn.addEventListener("click", () => {
   sessionStorage.setItem("audioState", gameAudio.paused ? "off" : "on");
 });
 
-// Event listener for when the page is unloaded (e.g., when navigating to another page)
+// Event listener for when the page is unloaded
 window.addEventListener("beforeunload", () => {
   // Save the audio playback position to sessionStorage
   sessionStorage.setItem("audioPlaybackPosition", gameAudio.currentTime);

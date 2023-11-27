@@ -103,7 +103,7 @@ function update() {
     }
 
     //score
-    context.fillStyle = "white";
+    context.fillStyle = "black";
     context.font="30px Arial";
     context.fillText(score, 5, 45);
 
